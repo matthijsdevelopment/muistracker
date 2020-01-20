@@ -1,7 +1,7 @@
 class Ster {
     __construct(afbNaam, i) {
-        this.x = 300 + 20*i;
-        this.y = 300 + 10*i;
+        this.x = 300 + 20;
+        this.y = 300 + 10;
         this.afbNaam = 'afb/' + afbNaam;
         var nweAfb = document.createElement('img');
         nweAfb.src = this.afbNaam;
@@ -26,9 +26,10 @@ class Ster {
             this.draaiing += this.vx;
             nweAfb.style.left = this.x - this.vedfschuiving + 'px';
             nweAfb.style.webkitTransform = 'rotate('+this.draaiing+'deg)';
-        
-    }
+        }
+    
     Ster.prototype.verschuiving = 25;
     Ster.prototype.veerconstante = 0.1;
     Ster.prototype.demping = 0.8;
-}}
+    }
+}
